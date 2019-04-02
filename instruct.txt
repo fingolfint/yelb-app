@@ -1,0 +1,31 @@
+pks
+
+pks clusters
+
+pks cluster my-cluster
+
+pks get-credentials my-cluster
+
+kubectl get nodes -o wide
+
+kubectl get ns
+
+kubectl create ns cust-demo
+
+kubectl get all -n cust-demo
+
+kubectl apply -f yelb-deploy.yaml -n cust-demo
+
+kubectl get all -n cust-demo
+
+kubectl get pods -o wide  -n cust-demo
+
+kubectl apply -f dfw.yaml -n cust-demo
+
+kubectl get networkpolicy -n cust-demo
+
+kubectl delete networkpolicy db-allow-5433 -n cust-demo
+
+# Change appserver replica to 3 and show load-balancer
+
+kubectl get pods -o wide  -n cust-demo
